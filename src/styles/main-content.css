@@ -1,0 +1,7 @@
+/* HEADER */
+
+.main-container{
+    max-width: 80vw;
+    height: 100vh;
+    margin: 0 60px 0 320px;
+}

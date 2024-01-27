@@ -22,7 +22,7 @@ body{
 .sidebar_navigation .logo{
     display: flex;
     border-radius: 10;
-    padding: 16px 0 15px 16px;
+    padding: 5px 0 10px 16px;
     background-color: #121212;
 }
 
@@ -37,7 +37,7 @@ body{
     padding: 0 0 10px 0;
 }
 
-.sidebar nav ul li{ padding: 15px 5px; }
+.sidebar nav ul li{ padding: 5px 5px 10px; }
 
 .sidebar nav ul li a{
     font-size: 20px;
@@ -49,16 +49,17 @@ body{
 /* SIDEBAR: LIBRARY  */
 
 .sidebar .library{
-    background-color:#121212;
-    border-radius:8px;
-    display:flex;
-    justify-content: space-between;
-    flex-direction: column;
-    padding: 25px 10px;
-    color:#b3b3b3;
-    font-weight: 600;
+    display: flex;
+    height: 375px;
     font-size:15px;
+    color:#b3b3b3;
     margin-top: 10px;
+    font-weight: 600;
+    border-radius:8px;
+    padding: 25px 10px;
+    flex-direction: column;
+    background-color:#121212;
+    justify-content: space-between;
 }
 
 .library .library_title{
@@ -153,7 +154,7 @@ body{
 .sidebar .cookies{ margin:20px 20px; }
 
 .sidebar .cookies a{
-    font-size:10px;
+    font-size:15px;
     color:#b3b3b3;
     font-weight: 500;
     text-decoration: none;
@@ -193,7 +194,7 @@ body{
     padding: 5px;
     flex-direction: row;
     justify-content: space-between;
-    background: linear-gradient(to right, #f615fd, #9214eb, #0cbaff);
+    background: linear-gradient(to right, #0cbaff, #00cd55, #008000);
 }
 
 .footer_content .footer_content_text{
@@ -218,7 +219,7 @@ body{
     width: 200px;
     height: 50px;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
     border-radius: 40px;
     margin: 5px 30px 2px;
 }

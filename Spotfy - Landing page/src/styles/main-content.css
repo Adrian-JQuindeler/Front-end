@@ -93,16 +93,16 @@
 
 .playlist-container{
     display: flex;
-    margin: 10px 5px 5px 15px;
-    padding: 10px;
     height: 70%;
+    padding: 10px;
     align-items: center;
     border-radius: 10px;
+    margin: 10px 5px 5px 15px;
     background-color: #121212;
     justify-content: space-between;
 }
 
-.playlist .playlist-title{
+#playlist .playlist-title{
     margin-top: 10px;
     margin-left: 20px;
     color: #ffffff;
@@ -111,8 +111,8 @@
 }
 
 .offer_scroll-container {
-    max-height: 52vh;
-    margin: 24px;
+    max-height: 65vh;
+    margin: 10px 25px 0px 25px;
     overflow-y: auto;
 }
   
@@ -127,9 +127,9 @@
 .offer_list-item {
     display: grid;
     justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 16px;
-    gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    gap: 10px;
     margin-bottom: 16px;
   
     display: grid;
@@ -140,7 +140,7 @@
   
 .cards {
     position: relative; 
-    width: 220px;
+    width: 200px;
     height: 200px;
     overflow: hidden;
     border-radius: 8px;
@@ -225,20 +225,20 @@
 .grid-container {
     grid-gap:24px;
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
     min-width: 767px;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
 }
   
 .artist-card {
-    background: #181818;
-    border-radius: 8px;
-    -ms-flex: 1;
     flex: 1;
-    isolation: isolate;
+    width: 100%;
+    -ms-flex: 1;
     padding: 16px;
     position: relative;
+    isolation: isolate;
+    border-radius: 8px;
+    background: #181818;
     transition: background-color 0.3s ease;
-    width: 100%;
 }
   
 .artist-card:hover {
@@ -246,42 +246,42 @@
 }
   
 .card-img {
-    padding-bottom: 100%;
-    position: relative;
     width: 100%;
+    position: relative;
     margin-bottom: 16px;
+    padding-bottom: 100%;
 }
   
 .artist-img {
-    height: 100%;
-    left: 0;
-    position: absolute;
     top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    position: absolute;
     border-radius: 50%;
 }
   
 .card-text {
-    display: flex;
-    flex-direction: column;
     color: #fff;
+    display: flex;
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
     min-height: 62px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    flex-direction: column;
 }
   
 .card-text a {
-    display: inline-block;
     max-width: 100%;
+    display: inline-block;
     vertical-align: middle;
 }
   
 .artist-name {
-    box-sizing: border-box;
-    margin-block: 0px;
     font-size: 16px;
     font-weight: 700;
+    margin-block: 0px;
+    box-sizing: border-box;
     padding-block-end: 8px;
 }
   
@@ -296,10 +296,10 @@
 }
   
 .play .fa-play {
-    position: absolute;
     right: 10px;
     top: 120px;
     padding: 18px;
+    position: absolute;
     background-color: #1db954;
     border-radius: 100%;
     font-size: 14px;

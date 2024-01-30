@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="./src/styles/reset.css">
         <link rel="stylesheet" href="./src/styles/main-content.css">
         <link rel="stylesheet" href="./src/styles/sidebar-footer.css">
+        <link rel="stylesheet" href="./src/styles/media-queries.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"/>
     </head>
@@ -78,7 +79,7 @@
                     </div>
                     <div class="header_search">
                         <img src="./src/assets/icons/search.png" alt="">
-                        <input type="text" id="search-holder" maxlength="800" placeholder="O que você gostaria de ouvir?">
+                        <input type="text" id="search-input" maxlength="800" placeholder="O que você gostaria de ouvir?">
                     </div>
                     <div class="header_login">
                         <button class="subscribe">Inscreva-se</button>
@@ -87,7 +88,7 @@
                 </nav>
 
                 <div class="playlist-container">
-                    <div class="playlist">
+                    <div id="playlist">
                         <div class="playlist-title">
                             <h2>Navegar por todas as seções</h2>
                         </div>
@@ -96,14 +97,14 @@
                                 <section class="offer_list-item">
 
                                     <a href="" class="cards">
-                                        <div class="cards cards1">
+                                        <div class="cards card1">
                                             <img src="./src/assets/playlist/1.jpeg" alt="">
                                             <span>Boas festas</span>
                                         </div>
                                     </a>
 
                                     <a href="" class="cards">
-                                        <div class="cards cards2">
+                                        <div class="cards card2">
                                             <img src="./src/assets/playlist/2.png" alt="">
                                             <span>Feitos para você</span>
                                         </div>
@@ -205,7 +206,7 @@
                     </div>
                     <div id="result-artist" class="hidden">
                         <div class="grid-container">
-                            <div class="artist-card" id="">
+                            <div class="artist-card">
                                 <div class="card-img">
                                     <img id="artist-img" class="artist-img" />
                                     <div class="play">
@@ -225,7 +226,7 @@
             </div>
         </main>
 
-        <div class="footer">
+        <footer class="footer">
             <div class="footer_content">
                 <div class="footer_content_text">
                     <span class="footer_content_text_title">Teste o premium de graça</span>
@@ -235,6 +236,7 @@
                     <span>Inscreva-se grátis</span> 
                 </button>
             </div>
-        </div>
+        </footer>
+        <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
